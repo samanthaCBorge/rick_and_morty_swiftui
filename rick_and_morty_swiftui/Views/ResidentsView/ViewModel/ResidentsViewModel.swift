@@ -11,7 +11,6 @@ import Combine
 protocol ResidentsViewModelRepresentable: ObservableObject {
     var residents: [String] { get set }
     var selectedCharacter: CharacterInfo? { get set }
-    var characterListSubject: PassthroughSubject<[String], Failure> { get }
     func loadData()
     func goToCharacter(character: CharacterInfo)
 }
@@ -19,7 +18,6 @@ protocol ResidentsViewModelRepresentable: ObservableObject {
 final class ResidentsViewModel<R: AppRouter> {
     var router: R?
 
-    let characterListSubject = PassthroughSubject<[String] , Failure>()
     private var cancellables = Set<AnyCancellable>()
     @Published var residents = [String]()
     @Published var locationUrl: Location?
@@ -36,17 +34,17 @@ extension ResidentsViewModel: ResidentsViewModelRepresentable {
     
     func loadData() {
         let recieved = { (response: CharacterInfo) -> Void in
-            DispatchQueue.main.async { [unowned self] in
-                characterListSubject.send(response.location.residents ?? [])
+            DispatchQueue.main.async {
+                print(response)
             }
         }
         
-        let completion = { [unowned self] (completion: Subscribers.Completion<Failure>) -> Void in
+        let completion = { (completion: Subscribers.Completion<Failure>) -> Void in
             switch  completion {
             case .finished:
                 break
             case .failure(let failure):
-                characterListSubject.send(completion: .failure(failure))
+                print(failure.localizedDescription)
             }
         }
         

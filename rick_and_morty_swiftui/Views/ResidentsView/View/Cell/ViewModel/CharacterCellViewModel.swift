@@ -10,13 +10,11 @@ import Combine
 
 protocol CharacterCellViewModelRepresentable: ObservableObject {
     var character: CharacterInfo? { get set }
-    var characterListSubject: PassthroughSubject<CharacterInfo?, Failure> { get }
     func loadData()
 }
 
 final class CharacterCellViewModel {
 
-    let characterListSubject = PassthroughSubject<CharacterInfo?, Failure>()
     private var cancellables = Set<AnyCancellable>()
     @Published var character: CharacterInfo?
     
@@ -34,17 +32,16 @@ extension CharacterCellViewModel: CharacterCellViewModelRepresentable {
     func loadData() {
         let recieved = { (response: CharacterInfo) -> Void in
             DispatchQueue.main.async { [unowned self] in
-                characterListSubject.send(response)
                 character = response
             }
         }
         
-        let completion = { [unowned self] (completion: Subscribers.Completion<Failure>) -> Void in
+        let completion = { (completion: Subscribers.Completion<Failure>) -> Void in
             switch  completion {
             case .finished:
                 break
             case .failure(let failure):
-                characterListSubject.send(completion: .failure(failure))
+                print(failure.localizedDescription)
             }
         }
         

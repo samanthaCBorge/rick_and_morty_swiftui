@@ -20,6 +20,10 @@ protocol CharacterListStore {
     func readCharacters(url: String) -> Future<CharacterInfo, Failure>
 }
 
+protocol EpisodeListStore {
+    func readEpisodes(url: String) -> Future<Episode, Failure>
+}
+
 final class APIManager {
     
     private func request<T>(for stringURL: String) -> Future<T, Failure> where T : Codable {
@@ -73,6 +77,12 @@ extension APIManager: ResidentListStore {
 
 extension APIManager: CharacterListStore {
     func readCharacters(url: String) -> Future<CharacterInfo, Failure> {
+        return request(for: url)
+    }
+}
+
+extension APIManager: EpisodeListStore {
+    func readEpisodes(url: String) -> Future<Episode, Failure> {
         return request(for: url)
     }
 }

@@ -25,7 +25,7 @@ struct HomeView<T>: View where T: HomeViewModelRepresentable {
                                 .padding(.all)
                         }
                         .frame(width: 200, height: 100, alignment: .center)
-                        .background(.ultraThinMaterial)
+                        .background(.thinMaterial)
                         .cornerRadius(15, corners: .allCorners)
                         .shadow(radius: 5, x: 0, y: 2)
                         .padding(.all)

@@ -67,7 +67,7 @@
 		CE5027522AE973E700A26C97 /* WelcomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewModel.swift; sourceTree = "<group>"; };
 		CEA8A3DA2AE1C4FB003938E7 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		CEA8A3DC2AE1C520003938E7 /* RoundedCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCorner.swift; sourceTree = "<group>"; };
-		CEC49C712ACC6C5C009B3B5F /* rick_and_morty_swiftui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rick_and_morty_swiftui.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEC49C712ACC6C5C009B3B5F /* Rick And Morty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rick And Morty.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEC49C742ACC6C5C009B3B5F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEC49C7B2ACC6C5C009B3B5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CEC49C7D2ACC6C5D009B3B5F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -197,7 +197,7 @@
 		CEC49C722ACC6C5C009B3B5F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CEC49C712ACC6C5C009B3B5F /* rick_and_morty_swiftui.app */,
+				CEC49C712ACC6C5C009B3B5F /* Rick And Morty.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -430,7 +430,7 @@
 				CE1C669E2AE17943000496DE /* SDWebImageSwiftUI */,
 			);
 			productName = rick_and_morty_swiftui;
-			productReference = CEC49C712ACC6C5C009B3B5F /* rick_and_morty_swiftui.app */;
+			productReference = CEC49C712ACC6C5C009B3B5F /* Rick And Morty.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -684,7 +684,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sc-rm.app.rick-and-morty-swiftui";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Rick And Morty";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -712,7 +712,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sc-rm.app.rick-and-morty-swiftui";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Rick And Morty";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -20,13 +20,13 @@ struct EpisodeView<T>: View where T: EpisodeViewModelRepresentable {
                     .fixedSize(horizontal: false, vertical: true)
                     .padding(5)
             }
-            .background(Color("lightGray"))
+            .background(Color.lightGray)
             .cornerRadius(4, corners: .allCorners)
             .frame(width: 220, alignment: .leading)
             
             HStack {
                 RoundedRectangle(cornerRadius: 4, style: .continuous)
-                    .fill(Color("lightGray"))
+                    .fill(Color.lightGray)
                     .frame(width: 72, height: 28)
                     .overlay(Text("Episode")
                         .fontWeight(.regular)
@@ -39,7 +39,7 @@ struct EpisodeView<T>: View where T: EpisodeViewModelRepresentable {
             
             HStack {
                 RoundedRectangle(cornerRadius: 4, style: .continuous)
-                    .fill(Color("lightGray"))
+                    .fill(Color.lightGray)
                     .frame(width: 72, height: 28)
                     .overlay(Text("Air Date")
                         .fontWeight(.regular)

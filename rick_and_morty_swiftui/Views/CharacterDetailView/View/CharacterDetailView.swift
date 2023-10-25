@@ -84,7 +84,7 @@ struct CharacterDetailView<T>: View where T: CharacterDetailViewRepresentable {
                 .frame(maxWidth: .infinity, alignment: .center)
                 .overlay(
                     RoundedRectangle(cornerRadius: 20, style: /*@START_MENU_TOKEN@*/.continuous/*@END_MENU_TOKEN@*/)
-                        .foregroundStyle(LinearGradient(gradient: Gradient(colors: [.black.opacity(0.2), Color("verdigris")]), startPoint: .top, endPoint: .bottom))
+                        .foregroundStyle(LinearGradient(gradient: Gradient(colors: [.black.opacity(0.2), Color.verdigris]), startPoint: .top, endPoint: .bottom))
                         .rotationEffect(.degrees(145))
                         .mask {
                             RoundedRectangle(cornerRadius: 20, style: /*@START_MENU_TOKEN@*/.continuous/*@END_MENU_TOKEN@*/)
@@ -95,7 +95,7 @@ struct CharacterDetailView<T>: View where T: CharacterDetailViewRepresentable {
                 .padding(.top, 80)
                 
                 RoundedRectangle(cornerRadius: 6, style: .continuous)
-                    .fill(Color("turquoise"))
+                    .fill(Color.turquoise)
                     .frame(width: 60, height: 28)
                     .overlay(Text("Info")
                         .fontWeight(.semibold)
@@ -111,7 +111,7 @@ struct CharacterDetailView<T>: View where T: CharacterDetailViewRepresentable {
                         let episodeViewModel = EpisodeViewModel(episodeURL: url)
                         EpisodeView(viewModel: episodeViewModel)
                     }
-                    .background(Color("darkGreen").opacity(0.4))
+                    .background(Color.darkGreen.opacity(0.4))
                     .cornerRadius(15, corners: .allCorners)
                 }
                 .padding()
@@ -119,6 +119,7 @@ struct CharacterDetailView<T>: View where T: CharacterDetailViewRepresentable {
             .padding(.top, 40)
         }
         .padding([.top, .bottom], 0.5)
+        .navigationTitle(viewModel.character?.name ?? "")
         .background(
             Image("stars")
                 .resizable()

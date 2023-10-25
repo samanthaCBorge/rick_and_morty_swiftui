@@ -25,12 +25,7 @@ final class HomeCoordinator<R: AppRouter> {
 
 extension HomeCoordinator: Coordinator {
     func start() {
-        if router.navigationController.viewControllers.isEmpty {
-            router.navigationController.pushViewController(primaryViewController, animated: false)
-        } else {
-            router.navigationController.viewControllers.removeAll()
-            router.navigationController.pushViewController(primaryViewController, animated: false)
-        }
+        router.navigationController.pushViewController(primaryViewController, animated: true)
     }
 }
 

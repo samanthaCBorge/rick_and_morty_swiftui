@@ -19,7 +19,8 @@ MVVM separa la lógica de presentación (View) de la lógica de negocios (ViewMo
  
 # Capturas
 
-![|200](https://github.com/samanthaCBorge/rick_and_morty_swiftui/assets/84641339/8e2e64b3-d5ad-465e-bafc-7c06330fdf63) ![2](https://github.com/samanthaCBorge/rick_and_morty_swiftui/assets/84641339/a1b07679-5fb8-4b16-b9d2-973104ce107a)
+![](https://github.com/samanthaCBorge/rick_and_morty_swiftui/assets/84641339/8e2e64b3-d5ad-465e-bafc-7c06330fdf63|width=10)
+![2](https://github.com/samanthaCBorge/rick_and_morty_swiftui/assets/84641339/a1b07679-5fb8-4b16-b9d2-973104ce107a)
 ![3](https://github.com/samanthaCBorge/rick_and_morty_swiftui/assets/84641339/9e0aaca1-8223-44d6-8224-3afd7940ec36) ![4](https://github.com/samanthaCBorge/rick_and_morty_swiftui/assets/84641339/7907565b-dc6d-43be-94fd-794da01a74f3)
 ![5](https://github.com/samanthaCBorge/rick_and_morty_swiftui/assets/84641339/410943ff-4dac-4455-9ad4-032b0f74f772) ![6](https://github.com/samanthaCBorge/rick_and_morty_swiftui/assets/84641339/1c5dc4ff-0707-44e2-a6d1-3911e90a8169)
 

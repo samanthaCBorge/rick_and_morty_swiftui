@@ -19,9 +19,9 @@ MVVM separa la lógica de presentación (View) de la lógica de negocios (ViewMo
  
 # Capturas
 
+<img src="https://github.com/samanthaCBorge/rick_and_morty_swiftui/assets/84641339/7829a3ec-3c03-4112-8515-a39a5a1cdab7.jpeg" alt="Welcome" width="250"/> <img src="https://github.com/samanthaCBorge/rick_and_morty_swiftui/assets/84641339/357592a9-f222-4361-8b16-6dad8990785d.jpeg" alt="Locations" width="250"/> <img src="https://github.com/samanthaCBorge/rick_and_morty_swiftui/assets/84641339/7a29606e-7411-4c6a-88c8-040e779a4d9c.jpeg" alt="Residents" width="250"/>
 
-
-<img src="https://github.com/samanthaCBorge/rick_and_morty_swiftui/assets/84641339/7829a3ec-3c03-4112-8515-a39a5a1cdab7.jpeg" alt="App view with all of Rick and Morty characters" width="250"/> <img src="https://user-images.githubusercontent.com/81619759/142417024-6d78e00b-ac5e-4311-9d2c-026cf769a54f.png" alt="App view with all of Rick and Morty locations" width="250"/> <img src="https://user-images.githubusercontent.com/81619759/142417104-a28b54eb-d070-4ec6-acec-bc580b265622.png" alt="App view with all of Rick and Morty episodes" width="250"/>
+<img src="https://github.com/samanthaCBorge/rick_and_morty_swiftui/assets/84641339/797892ab-c9d9-4536-bbfd-6ee23c78e42f.jpeg" alt="Character detail" width="250"/> <img src="https://github.com/samanthaCBorge/rick_and_morty_swiftui/assets/84641339/5d2923c4-09d7-406e-af2e-22ea7f48f496.jpeg" alt="Character detail" width="250"/> <img src="https://github.com/samanthaCBorge/rick_and_morty_swiftui/assets/84641339/68471de8-b2b6-4fad-9803-a59ea0d78ae3.jpeg" alt="Character detail" width="250"/>
 
 # Intrucciones
 1. Clone o descargue este repositorio.
